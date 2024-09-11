@@ -23,6 +23,7 @@ class MyServer(BaseHTTPRequestHandler):
             html_content = f.read()
         self.wfile.write(bytes(html_content, "utf-8"))
 
+
 if __name__ == "__main__":
     # Инициализация веб-сервера, который будет по заданным параметрах всети
     # принимать запросы и отправлять их на обработку специальному классу,который был описан выше
